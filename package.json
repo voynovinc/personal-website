@@ -1,11 +1,9 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Personal front end web developer portfolio website",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "Personal front end web developer portfolio website",
+    "main": "app.js",
+    "scripts": {},
+    "author": "",
+    "license": "ISC"
 }

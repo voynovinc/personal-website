@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,600|Quicksand:400&display=swap");
+:root {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --text: #ffffff;
+    --text-high: #ffffff57;
+    --text-med: #ffffff3c;
+    --text-low: #ffffff26;
+    --background: #121212;
+    --primary: #f39c12;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+h1 {
+    font-family: "Oswald", sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald", sans-serif;
+}
+
+p {
+    font-family: "Quicksand", sans-serif;
+}
