@@ -30,9 +30,8 @@ body {
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 
-    max-width: 1100px;
+    max-width: 80vw;
     margin: 0 auto;
-    padding: 0 50px;
 }
 
 h1 {
@@ -199,7 +198,6 @@ header:before {
 @media only screen and (max-width: 1200px) {
     body {
         font-size: 18px;
-        padding: 0 100px;
     }
 }
 
@@ -207,7 +205,6 @@ header:before {
 @media only screen and (max-width: 1023px) {
     body {
         font-size: 16px;
-        padding: 0 100px;
     }
 }
 
@@ -216,7 +213,6 @@ header:before {
     body {
         text-align: center;
         font-size: 16px;
-        padding: 0 20px;
     }
 
     .underline:after {
@@ -226,6 +222,7 @@ header:before {
 
     .header--nav {
         text-align: center;
+        margin-bottom: 50px;
     }
 
     .header--buttons {
@@ -245,6 +242,10 @@ header:before {
 
     header:before {
         opacity: 0.35;
+    }
+
+    .scroll-indicator {
+        display: none;
     }
 }
 
