@@ -1,23 +1,59 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald:300,600|Quicksand:400&display=swap");
-:root {
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,600|Quicksand:300,400&display=swap");
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    --text: #ffffff;
-    --text-high: #ffffff57;
-    --text-med: #ffffff3c;
+}
+
+html {
+    --text-high: #ffffffc1;
+    --text-med: #ffffff60;
     --text-low: #ffffff26;
-    --background: #121212;
+    --dark-gray: #1c1c1e;
+    --gray: #333335;
+    --off-white: #ecf2f8;
     --primary: #f39c12;
+    --btn-primary-hover: #f37312;
+    --btn-transition: 0.3s;
 }
 
 body {
-    background-color: var(--background);
-    color: var(--text);
+    list-style: none;
+    text-decoration: none;
+
+    background-color: var(--dark-gray);
+    color: var(--text-high);
+
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 50px;
 }
 
 h1 {
     font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 450%;
+
+    opacity: 0.8;
+    color: var(--off-white);
+    text-transform: uppercase;
+
+    margin-bottom: 5px;
+}
+
+a {
+    color: var(--off-white);
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
 
 h2,
@@ -28,6 +64,193 @@ h6 {
     font-family: "Oswald", sans-serif;
 }
 
-p {
-    font-family: "Quicksand", sans-serif;
+.btn {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+
+    border: none;
+    border-radius: 4px;
+
+    padding: 10px 50px;
+
+    outline: none;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+
+    color: var(--off-white);
+    background-color: var(--gray);
+}
+
+/**
+* =============== REUSABLE =================
+*/
+
+.underline:after {
+    content: " ";
+    display: block;
+    width: 150px;
+    background-color: var(--primary);
+    height: 4px;
+
+    margin-bottom: 50px;
+}
+
+/**
+* ============== HEADER ==================
+*/
+
+/* Hero image */
+header:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.85;
+    background-image: url(assets/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+.header--nav {
+    margin: 30px 0 60px 0px;
+    text-align: right;
+}
+
+.header--nav li {
+    display: inline-block;
+}
+
+.header--nav a {
+    text-transform: uppercase;
+    font-size: 80%;
+    padding: 5px 20px;
+    background-color: transparent;
+    transition: background-color var(--btn-transition);
+}
+
+.header--nav a:hover {
+    background-color: var(--gray);
+}
+
+.subtitle {
+    font-size: 110%;
+    margin-bottom: 50px;
+    line-height: 180%;
+}
+
+.header--skillset {
+    width: 360px;
+}
+
+.header--buttons {
+    margin-top: 50px;
+}
+
+.header--cta-btn {
+    background-color: var(--primary);
+    color: var(--off-white);
+    margin-right: 10px;
+    transition: background-color var(--btn-transition);
+}
+
+.header--cta-btn:hover {
+    background-color: var(--btn-primary-hover);
+}
+
+.header--contact-btn {
+    background-color: transparent;
+    transition: background-color var(--btn-transition);
+}
+
+.header--contact-btn:hover {
+    background-color: var(--gray);
+}
+
+.icon {
+    width: 24px;
+    vertical-align: -10%;
+}
+
+.contact-icon {
+    margin-right: 15px;
+}
+
+.download-icon {
+    margin-right: 5px;
+}
+
+.scroll-indicator {
+    position: absolute;
+    left: 50vw;
+    bottom: 30px;
+    height: 24px;
+}
+
+/* =================== MEDIA QUERIES ================= */
+
+/* From big table to 1200px: for width smaller than pixel row */
+@media only screen and (max-width: 1200px) {
+    body {
+        font-size: 18px;
+        padding: 0 100px;
+    }
+}
+
+/* Small table to big tablet: from 768 to 1023px */
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 16px;
+        padding: 0 100px;
+    }
+}
+
+/* Small phones to small tablets: from 481 to 767px */
+@media only screen and (max-width: 767px) {
+    body {
+        text-align: center;
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .underline:after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header--nav {
+        text-align: center;
+    }
+
+    .header--buttons {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .header--buttons a {
+        display: block;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    .header--skillset {
+        width: 240px;
+    }
+
+    header:before {
+        opacity: 0.35;
+    }
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
 }
