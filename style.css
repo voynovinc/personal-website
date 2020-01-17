@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,600|Quicksand:300,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,600|Quicksand:300,400,500&display=swap");
 * {
     box-sizing: border-box;
     padding: 0;
@@ -38,12 +38,12 @@ h1 {
     font-family: "Oswald", sans-serif;
     font-weight: 400;
     font-size: 450%;
+    line-height: 95%; /* Set font margins 0*/
+    margin-bottom: 30px;
 
     opacity: 0.8;
     color: var(--off-white);
     text-transform: uppercase;
-
-    margin-bottom: 15px;
 }
 
 a {
@@ -55,7 +55,16 @@ li {
     list-style: none;
 }
 
-h2,
+h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 200%;
+    line-height: 95%;
+
+    opacity: 0.8;
+    color: var(--off-white);
+    text-transform: uppercase;
+}
 h3,
 h4,
 h5,
@@ -86,19 +95,26 @@ h6 {
 * =============== REUSABLE =================
 */
 
+/* Underline */
 .underline:after {
     content: " ";
     display: block;
     width: 150px;
     background-color: var(--primary);
     height: 4px;
-
     margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 /**
-* ============== HEADER ==================
+* ====================================
+---------------- HEADER --------------
+ =====================================
 */
+
+header {
+    height: 100vh;
+}
 
 /* Hero image */
 header:before {
@@ -118,7 +134,7 @@ header:before {
 }
 
 .header--nav {
-    margin: 30px 0 30px 0px;
+    margin: 30px 0 60px 0px;
     text-align: right;
 }
 
@@ -207,7 +223,72 @@ header:before {
     height: 24px;
 }
 
+/* ===============================
+---------- SKILLS & TOOLS --------
+==================================
+ */
+
+.skills--container {
+    background-color: var(--gray);
+    border-radius: 15px;
+    padding: 3% 4%;
+}
+
+.skills--item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* remove margin from last item */
+.skills--container .skills--item:last-child {
+    margin-bottom: 0;
+}
+
+.skills--item h4 {
+    display: block;
+
+    font-family: "Quicksand", sans-serif;
+    text-align: right;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    margin-right: 30px;
+    min-width: 15%;
+}
+
+.skills--item p {
+    background-color: var(--dark-gray);
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    opacity: 0.75;
+    font-weight: 300;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 90%;
+}
+
+.footer {
+    color: var(--primary);
+}
+
+/* ================================================== */
 /* =================== MEDIA QUERIES ================= */
+/* ================================================== */
 
 /* From big table to 1200px: for width smaller than pixel row */
 @media only screen and (max-width: 1200px) {
@@ -290,6 +371,29 @@ header:before {
     .subtitle--icon {
         font-size: 150%;
         margin-bottom: 15px;
+    }
+
+    .skills--item {
+        flex-direction: column;
+    }
+
+    .item-container {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .item-container p {
+        margin-right: 0;
+    }
+
+    .skills--item h4 {
+        width: auto;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .skills--container {
+        padding: 30px 20px;
     }
 }
 
