@@ -12,7 +12,7 @@ html {
     --dark-gray: #1c1c1e;
     --gray: #333335;
     --off-white: #ecf2f8;
-    --off-white-secondary: #ecf2f88f;
+    --off-white-secondary: #ecf2f8af;
     --primary: #f39c12;
     --btn-primary-hover: #f37312;
     --btn-transition: 0.3s;
@@ -81,7 +81,7 @@ h6 {
     border: none;
     border-radius: 4px;
 
-    padding: 10px 50px;
+    padding: 1% 5%;
 
     outline: none;
     text-transform: uppercase;
@@ -232,7 +232,7 @@ header:before {
 
 .skills--container {
     background-color: var(--gray);
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 3% 4%;
     margin-bottom: 100px;
 }
@@ -258,17 +258,18 @@ header:before {
 .skills--item h4 {
     display: block;
 
-    font-family: "Quicksand", sans-serif;
     text-align: right;
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
 
     margin-right: 30px;
+    margin-bottom: 10px;
     min-width: 15%;
 }
 
 .skills--item p {
     background-color: var(--dark-gray);
+    font-size: 80%;
     padding: 10px;
     margin-right: 10px;
     border-radius: 5px;
@@ -284,19 +285,107 @@ header:before {
     border-radius: 5px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+
+    padding: 30px;
+}
+
+.project--desc-item {
+    margin-bottom: 15px;
+}
+
+.project--desc-item h4 {
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.project--desc-item p {
+    text-align: justify;
+}
+.project--desc-item p,
+.project--desc-item li {
+    color: var(--off-white-secondary);
+    font-size: 85%;
+    line-height: 150%;
+}
+
+.project--desc-item li::before {
+    content: "•";
+    margin-right: 10px;
+}
+
+.project-item--header {
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.project-item--header h3 {
+    font-weight: 400;
+    font-size: 130%;
 }
 
 .project-item--left {
-    width: 50%;
+    width: 48%;
+    margin-right: 3%;
 }
 
 .project-item--right {
-    width: 50%;
+    width: 48%;
 }
 
 .project-item--img {
-    max-width: 50%;
+    border-radius: 5px;
+    max-width: 100%;
+
+    background-color: var(--dark-gray);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.project-tags {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-tags li {
+    font-size: 80%;
+
+    display: inline-block;
+    padding: 10px 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+
+    border-radius: 5px;
+    background-color: var(--dark-gray);
+}
+
+.project-buttons {
+    text-align: center;
+    color: var(--off-white);
+}
+
+.project-buttons .btn {
+    padding: 2% 10%;
+}
+
+.btn__demo {
+    background-color: var(--primary);
+    margin-right: 10px;
+    transition: background-color var(--btn-transition);
+}
+
+.btn__demo:hover {
+    background-color: var(--btn-primary-hover);
+}
+
+.btn__source {
+    transition: background-color var(--btn-transition);
+}
+
+.btn__source:hover {
+    background-color: var(--text-low);
 }
 
 /* =========================================
@@ -351,11 +440,8 @@ footer {
     }
 
     .underline:after {
-        width: 70px;
+        width: 100px;
         height: 3px;
-    }
-
-    .underline:after {
         margin-left: auto;
         margin-right: auto;
     }
@@ -400,29 +486,58 @@ footer {
     .subtitle--icon {
         font-size: 150%;
         margin-bottom: 15px;
+        margin-right: 0;
     }
 
     .skills--item {
         flex-direction: column;
+        margin-bottom: 0;
     }
 
     .item-container {
-        flex-flow: column;
-        align-items: center;
+        justify-content: center;
     }
 
     .item-container p {
-        margin-right: 0;
+        margin-right: 5px;
     }
 
     .skills--item h4 {
         width: auto;
         text-align: center;
-        margin: 15px 0;
+        margin: 10px 0;
+    }
+
+    .skills--item p {
+        font-size: 75%;
+        margin-bottom: 5px;
     }
 
     .skills--container {
         padding: 30px 20px;
+    }
+
+    .project-item--left,
+    .project-item--right {
+        width: 100%;
+    }
+
+    .project-item--left {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .project-tags {
+        margin-bottom: 20px;
+    }
+
+    .project--desc-item p {
+        text-align: center;
+    }
+
+    .project-tags li {
+        margin-bottom: 5px;
+        margin-right: 5px;
     }
 }
 
