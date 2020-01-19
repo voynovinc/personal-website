@@ -407,6 +407,24 @@ iframe {
 }
 
 /* =========================================
+------------------- CONTACT ------------------
+ =========================================*/
+
+.contact--info a {
+    color: var(--primary);
+    transition: color var(--btn-transition), border-bottom var(--btn-transition);
+}
+
+.contact--info a:hover {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+}
+
+.contact--info {
+    margin-bottom: 50px;
+}
+
+/* =========================================
 ------------------- FOOTER ------------------
  =========================================*/
 footer {
