@@ -288,6 +288,7 @@ header:before {
     flex-wrap: wrap;
 
     padding: 30px;
+    margin-bottom: 50px;
 }
 
 .project--desc-item {
@@ -332,6 +333,23 @@ header:before {
 
 .project-item--right {
     width: 48%;
+}
+
+.project-item--video {
+    width: 100%;
+    padding-bottom: 58%;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .project-item--img {
@@ -538,6 +556,10 @@ footer {
     .project-tags li {
         margin-bottom: 5px;
         margin-right: 5px;
+    }
+
+    .project-item--video {
+        height: 60%;
     }
 }
 
