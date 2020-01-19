@@ -12,6 +12,7 @@ html {
     --dark-gray: #1c1c1e;
     --gray: #333335;
     --off-white: #ecf2f8;
+    --off-white-secondary: #ecf2f88f;
     --primary: #f39c12;
     --btn-primary-hover: #f37312;
     --btn-transition: 0.3s;
@@ -145,6 +146,7 @@ header:before {
 .header--nav a {
     text-transform: uppercase;
     font-size: 90%;
+    color: var(--off-white-secondary);
     padding: 5px 20px;
     background-color: transparent;
     transition: background-color var(--btn-transition);
@@ -232,6 +234,7 @@ header:before {
     background-color: var(--gray);
     border-radius: 15px;
     padding: 3% 4%;
+    margin-bottom: 100px;
 }
 
 .skills--item {
@@ -272,7 +275,33 @@ header:before {
     margin-bottom: 10px;
 }
 
-/* Footer */
+/* =========================================
+------------------- PROJECTS ------------------
+ =========================================*/
+
+.project-item {
+    background-color: var(--gray);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.project-item--left {
+    width: 50%;
+}
+
+.project-item--right {
+    width: 50%;
+}
+
+.project-item--img {
+    max-width: 50%;
+}
+
+/* =========================================
+------------------- FOOTER ------------------
+ =========================================*/
 footer {
     opacity: 0.75;
     font-weight: 300;
