@@ -16,6 +16,8 @@ html {
     --primary: #f39c12;
     --btn-primary-hover: #f37312;
     --btn-transition: 0.3s;
+
+    scroll-behavior: smooth;
 }
 
 body {
