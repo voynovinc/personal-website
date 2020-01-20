@@ -293,6 +293,10 @@ header:before {
     margin-bottom: 50px;
 }
 
+.project-item:last-child {
+    margin-bottom: 100px;
+}
+
 .project--desc-item {
     margin-bottom: 15px;
 }
