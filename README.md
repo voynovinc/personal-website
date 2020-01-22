@@ -1,6 +1,6 @@
 # personal-website
 
-![alt text](/readme-assets/readme-header-img.png "Personal portfolio website")
+![alt text](/readme-assets/readme-header-img.jpg "Personal portfolio website")
 
 Personal portfolio website with resume and projects.
 
@@ -10,10 +10,10 @@ Used plain `HTML` and `CSS` to create a personal portfolio website.
 
 It includes:
 
-- __Home page__ with cta to download resume or contact me
-- __Skills__ that outline my primary skills in web dev
-- __Projects__ that I've recently created that are worth your attention
-- __Contact__ ways to get in touch
+- **Home page** with cta to download resume or contact me
+- **Skills** that outline my primary skills in web dev
+- **Projects** that I've recently created that are worth your attention
+- **Contact** ways to get in touch
 
 ## Projects
 
@@ -21,7 +21,7 @@ Includes the most recent and worthy of your attention projects.
 
 ### Kanban Board
 
-![alt text](/readme-assets/kanban-board.png "Kanban Board")
+![alt text](/readme-assets/kanban-board.jpg "Kanban Board")
 
 A Trello like single page application that allows you to follow your Agile development process.
 
@@ -36,10 +36,10 @@ A Trello like single page application that allows you to follow your Agile devel
 
 ### Adventure Racing Game
 
-![alt text](/readme-assets/feature-graphic-new.png "Adventure Racing Game")
+![alt text](/readme-assets/feature-graphic-new.jpg "Adventure Racing Game")
 
 A 2d side scrolling racing game that is a clone of Hill Climb Racing 2.
-  You can [view the trailer here](https://www.youtube.com/watch?v=-FKZgt4rXic "Link to YouTube").
+You can [view the trailer here](https://www.youtube.com/watch?v=-FKZgt4rXic "Link to YouTube").
 
 #### Game built with
 
