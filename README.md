@@ -1,7 +1,10 @@
 # personal-website
+
+![alt text](/readme-assets/readme-header-img.png "Personal portfolio website")
+
 Personal portfolio website with resume and projects.
 
-# About
+## About
 
 Used plain `HTML` and `CSS` to create a personal portfolio website.
 
@@ -12,29 +15,33 @@ It includes:
 - __Projects__ that I've recently created that are worth your attention
 - __Contact__ ways to get in touch
 
-# Projects
+## Projects
 
 Includes the most recent and worthy of your attention projects.
 
-## Kanban Board
+### Kanban Board
+
+![alt text](/readme-assets/kanban-board.png "Kanban Board")
 
 A Trello like single page application that allows you to follow your Agile development process.
 
-### Built with
+#### Built with
 
 - Angular
 - TypeScript, HTML, SCSS
 - Angular Material UI
 - Firebase
-  - Auth 
+  - Auth
   - Firestore
 
-## Adventure Racing Game
+### Adventure Racing Game
 
-A 2d side scrolling racing game that is a clone of Hill Climb Racing 2. 
-<br/>You can [view the trailer here](https://www.youtube.com/watch?v=-FKZgt4rXic "Link to YouTube").
+![alt text](/readme-assets/feature-graphic-new.png "Adventure Racing Game")
 
-### Built with
+A 2d side scrolling racing game that is a clone of Hill Climb Racing 2.
+  You can [view the trailer here](https://www.youtube.com/watch?v=-FKZgt4rXic "Link to YouTube").
+
+#### Game built with
 
 - Unity3D
 - C#
@@ -43,6 +50,6 @@ A 2d side scrolling racing game that is a clone of Hill Climb Racing 2.
 - Analytic tools
 - Ad integrations, In App Purchase with Google Play
 
-# Final note
+## Final note
 
 If you'd like to get in touch with me, visit [my website](https://www.ivanvoynov.com "ivanvoynov.com") to find out how you can do so 🙃.
