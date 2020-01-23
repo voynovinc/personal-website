@@ -1,6 +1,8 @@
-# personal-website
+# personal-website: [ivanvoynov.com](https://ivanvoynov.com "ivanvoynov.com") 
 
 ![alt text](/readme-assets/readme-header-img.jpg "Personal portfolio website")
+
+[View live version here.](https://ivanvoynov.com "ivanvoynov.com")
 
 Personal portfolio website with resume and projects.
 
