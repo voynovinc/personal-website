@@ -102,7 +102,7 @@ h6 {
 .underline:after {
     content: " ";
     display: block;
-    width: 150px;
+    width: 100px;
     background-color: var(--primary);
     height: 4px;
     margin-bottom: 50px;
