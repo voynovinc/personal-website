@@ -1,8 +1,8 @@
-# personal-website: [ivanvoynov.com](https://ivanvoynov.com "ivanvoynov.com") 
+# personal-website
 
 ![alt text](/readme-assets/readme-header-img.jpg "Personal portfolio website")
 
-[View live version here.](https://ivanvoynov.com "ivanvoynov.com")
+[View Live Version Here](https://ivanvoynov.com "ivanvoynov.com")
 
 Personal portfolio website with resume and projects.
 
@@ -21,13 +21,13 @@ It includes:
 
 Includes the most recent and worthy of your attention projects.
 
-### Kanban Board
+## Kanban Board
 
-![alt text](/readme-assets/kanban-board.jpg "Kanban Board")
+![alt text](/readme-assets/kanban-demo-1.gif "Kanban Board")
 
 A Trello like single page application that allows you to follow your Agile development process.
 
-#### Built with
+### Built with
 
 - Angular
 - TypeScript, HTML, SCSS
@@ -36,14 +36,26 @@ A Trello like single page application that allows you to follow your Agile devel
   - Auth
   - Firestore
 
-### Adventure Racing Game
+## GrowFood Landing Page
 
-![alt text](/readme-assets/feature-graphic-new.jpg "Adventure Racing Game")
+![alt text](/readme-assets/grow-food-small.gif "GrowFood Landing Page")
+
+A landing page for GrowFood mock food delivery service. The purpose was to learn how to properly structure and style websites.
+
+### Created with
+
+- HTML5
+- CSS3
+- JQuery
+
+## Adventure Racing Game
+
+![alt text](/readme-assets/game-2.gif "Adventure Racing Game")
 
 A 2d side scrolling racing game that is a clone of Hill Climb Racing 2.
 You can [view the trailer here](https://www.youtube.com/watch?v=-FKZgt4rXic "Link to YouTube").
 
-#### Game built with
+### Game built with
 
 - Unity3D
 - C#
