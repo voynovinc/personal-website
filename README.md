@@ -1,6 +1,6 @@
 # personal-website
 
-![alt text](/readme-assets/readme-header-img.jpg "Personal portfolio website")
+![alt text](/readme-assets/portfolio-1.gif "Personal portfolio website")
 
 [View Live Version Here](https://ivanvoynov.com "ivanvoynov.com")
 
