@@ -84,7 +84,7 @@ h6 {
     border: none;
     border-radius: 4px;
 
-    padding: 1% 5%;
+    padding: 10px 5%;
 
     outline: none;
     text-transform: uppercase;
@@ -211,7 +211,7 @@ header:before {
 }
 
 .icon {
-    width: 24px;
+    width: 1.25em;
     vertical-align: -10%;
 }
 
@@ -391,10 +391,15 @@ iframe {
 .project-buttons {
     text-align: center;
     color: var(--off-white);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
 }
 
 .project-buttons .btn {
-    padding: 2% 10%;
+    padding: 2% 0;
+    width: 49%;
 }
 
 .btn__demo {
@@ -471,12 +476,18 @@ footer {
 /* Small phones to small tablets: from 481 to 767px */
 @media only screen and (max-width: 767px) {
     body {
+        max-width: 90vw;
+
         text-align: center;
         font-size: 16px;
     }
 
     h1 {
         line-height: 80px;
+    }
+
+    .btn {
+        padding: 10px 25px;
     }
 
     .header--nav {
@@ -595,6 +606,19 @@ footer {
 @media only screen and (max-width: 480px) {
     body {
         font-size: 14px;
+    }
+
+    .project-buttons {
+        flex-flow: column nowrap;
+    }
+
+    .project-buttons .btn {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .project-buttons .btn:first-child {
+        margin-bottom: 10px;
     }
 }
 
