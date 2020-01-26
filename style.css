@@ -11,6 +11,7 @@ html {
     --text-low: #ffffff26;
     --dark-gray: #1c1c1e;
     --gray: #333335;
+    --light-gray: #3c3c3f;
     --off-white: #ecf2f8;
     --off-white-secondary: #ecf2f8af;
     --primary: #f39c12;
@@ -200,6 +201,7 @@ header:before {
 }
 
 .header--contact-btn {
+    border: 2px solid var(--gray);
     background-color: transparent;
     transition: background-color var(--btn-transition);
 }
@@ -406,6 +408,7 @@ iframe {
 }
 
 .btn__source {
+    border: 2px solid var(--light-gray);
     transition: background-color var(--btn-transition);
 }
 
